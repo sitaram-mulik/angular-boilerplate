@@ -49,10 +49,10 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/app/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/app/styles/styles.scss"
             ],
             "scripts": []
           },
