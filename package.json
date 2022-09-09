@@ -8,20 +8,8 @@
         "watch": "ng build --watch --configuration development",
         "lint": "npx eslint src/app",
         "lint-fix": "npx eslint --fix",
-        "format": "npx prettier --write src/app"
-    },
-    "lint-staged": {
-        "src/**/*.{html,ts,scss}": [
-            "prettier --write"
-        ],
-        "src/**/*.ts": [
-            "eslint --fix"
-        ]
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged"
-        }
+        "format": "npx prettier --write src/app",
+        "prepare": "husky install"
     },
     "private": true,
     "dependencies": {
@@ -49,5 +37,9 @@
         "lint-staged": "^13.0.3",
         "prettier": "^2.7.1",
         "typescript": "^4.7.2"
+    },
+    "lint-staged": {
+        "*.ts": "eslint --cache --fix",
+        "*.src/app": "prettier --write"
     }
 }
