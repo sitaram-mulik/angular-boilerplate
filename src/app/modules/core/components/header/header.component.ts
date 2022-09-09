@@ -7,8 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
     ngOnInit(): void {
-        const log: unknown = 'HI';
-        const m: unknown = 10;
+        const log: unknown = 'Hello';
         console.log(log);
     }
 }
