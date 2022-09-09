@@ -39,7 +39,11 @@
         "typescript": "^4.7.2"
     },
     "lint-staged": {
-        "*.ts": "eslint --cache --fix",
-        "*.src/app": "prettier --write"
+        "src/**/*.{html,ts,scss}": [
+            "prettier --check"
+        ],
+        "src/**/*.ts": [
+            "eslint"
+        ]      
     }
 }
